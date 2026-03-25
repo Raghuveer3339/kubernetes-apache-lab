@@ -20,7 +20,7 @@ To deploy and manage an Apache web application using Kubernetes.
 
 ## ⚙️ Commands Used
 
--bash
+```bash
 kubectl create deployment apache --image=httpd
 kubectl expose deployment apache --port=80 --type=NodePort
 kubectl get pods
@@ -29,7 +29,7 @@ kubectl set image deployment/apache httpd=wrongimage
 kubectl describe pod <pod-name>
 kubectl set image deployment/apache httpd=httpd
 kubectl delete pod <pod-name>
-
+```
 📊 Observations
 Pods were created successfully
 Application was accessible via port-forward
